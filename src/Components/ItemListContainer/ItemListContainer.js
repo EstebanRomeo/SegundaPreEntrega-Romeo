@@ -28,7 +28,7 @@ const ItemListContainer = () => {
   }, [id])
 
  return(
-    <div className='container'>
+    <div className='item-section'>
         <div className='row'>
 
       <ItemList item={item}/>

@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget';
-import Logo from './Logo';
+
 import './NavBar.css';
 import { Link } from 'react-router-dom';
 
@@ -12,16 +12,17 @@ function NavBar() {
       
         <Navbar bg="light" data-bs-theme="light">
           <Container>
-            <Navbar.Brand to="/"> <Logo/> SUShop </Navbar.Brand>
+            <Navbar.Brand to="/"> LaPizza </Navbar.Brand>
             <Nav className="container">
               <Link to="/">Inicio</Link>
-              <Link to="/categoria/ropa">Ropa</Link>
-              <Link to="/categoria/calzado">Calzado</Link>
-              <Link to="/categoria/accesorio">Accesorio</Link>
+              <Link to="/categoria/normales">Normales</Link>
+              <Link to="/categoria/vegetales">Con Vegetales</Link>
+              <Link to="/categoria/especiales">Especiales</Link>
 
             </Nav>
-          <Link to="/cart"> <CartWidget/> </Link>
+     
         </Container>
+        <Link to="/cart"> <CartWidget/> </Link>
       </Navbar>
       </>
   );

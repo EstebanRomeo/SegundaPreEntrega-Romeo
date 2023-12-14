@@ -1,11 +1,12 @@
 import React from "react";
 import Item from '../Item/Item';
+import "../ItemDetailContainer/EstilosItems.css"
 
 const ItemList = ({item}) => {
     return (
-        <div clasName='row'>
+        <div className='container-item'>
             {item.map(item =>
-                <div className= 'col-md-3' key={item.id}>
+                <div className= 'col-md-1' key={item.id}>
                     <Item item={item} />
                 </div>
                 )}

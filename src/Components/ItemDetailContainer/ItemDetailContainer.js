@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import arrayProductos from '../Json/arrayProductos.json';
 import ItemDetail from "../ItemDetail/ItemDetail";
+import '../ItemDetailContainer/EstilosItems.css';
 
 const ItemDetailContainer = () => {
 
@@ -22,7 +23,7 @@ const ItemDetailContainer = () => {
        }, [id])
      
       return(
-         <div className='container'>
+         <div className='container-item'>
            <div className='row'>
      
            <ItemDetail item={item} />
